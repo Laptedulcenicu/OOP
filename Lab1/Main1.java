@@ -4,28 +4,28 @@ public class Main1 {
 
     public static void main(String args[]) {
 
-        Object one = new Object();
+        Object first = new Object();
         one.color = "black";
         one.height = 200;
         one.width = 200;
-        one.widthPixels = 640;
-        one.heightPixels = 890;
+        one.widthPixels = 512;
+        one.heightPixels = 1024;
 
-        Object two = new Object();
-        two.color = "blue";
-        two.height = 500;
-        two.width = 500;
-        two.widthPixels = 840;
-        two.heightPixels = 1000;
+        Object second = new Object();
+        two.color = "red";
+        two.height = 400;
+        two.width = 400;
+        two.widthPixels = 1920;
+        two.heightPixels = 1080;
 
 
-        one.printObject();
+        first.printObject();
         System.out.println();
-        two.printObject();
+        second.printObject();
         System.out.println();
 
-        Compare abc = new Compare();
-        abc.compare1(one, two);
+        Compare compare = new Compare();
+        compare.compare1(first, second);
     }
 
 
